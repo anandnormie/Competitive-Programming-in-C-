@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define pb push_back
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
+#define say(n) cout << n << endl;
+#define ndl cout << endl;
+#define dbl double
+#define vec(a) vector<ll>a;
+#define inpvec(a,n) loop(i,0,n){ll x;cin>>x;a.pb(x);}
+#define inpvecpr(a,n) loop(i,0,n){ll x,y;cin>>x>>y;a.pb({x,y});}
+#define loop(i,k,n) for (ll i = k; i < n; i++)
+#define _brucewayne_ ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define PI 3.1415926535897932384626433832795
+const ll N = 1e5 + 1, M = 1e9 + 7;
+
+
+// I am not disgrace! I am Vengeance! I am the Night! I am the BATMAN
+
+// anandnormie -> codechef,_brucewayne_ ->codeforces,Anand Tiwari ->Linkedin
+
+
+long long stringtointeger(string s)
+{
+    reverse(s.begin(),s.end());
+    long long num=0;
+    for(ll i=0;i<s.size();i++)
+    {
+        ll a=s[i]-'0';
+        num+=pow(10,i)*a;
+    }
+    return num;
+}
+
+
+
+void solve()
+{
+    string s;
+    cin>>s;
+    say(stringtointeger(s))
+}
+int main()
+{
+    _brucewayne_
+    ll t;
+    cin>>t;
+    while(t--)
+    {
+        solve();
+    }
+    return 0;
+}
